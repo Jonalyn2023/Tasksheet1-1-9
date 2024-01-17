@@ -1,0 +1,38 @@
+
+    import static java.lang.Math.*;
+public class MathOperations {
+    public static int add(int a, int b) {
+        // to add two integers
+        return addExact(a, b);
+    }
+
+    // create a static method for subtraction
+    public static int subtract(int a, int b) {
+        // to subtract two integers
+        return subtractExact(a, b);
+    }
+
+    // for multiplication
+    public static int multiply(int a, int b) {
+        // use Math.multiplyExact() to multiply two integers
+        return multiplyExact(a, b);
+    }
+
+    //  for division
+    public static int divide(int a, int b) {
+        // use Math.floorDiv() to divide two integers
+        return floorDiv(a, b);
+    }
+
+    // main method
+    public static void main(String[] args) {
+
+        int x = 10;
+        int y = 5;
+        System.out.println("x = " + x + ", y = " + y);
+        System.out.println("x + y = " + add(x, y));
+        System.out.println("x - y = " + subtract(x, y));
+        System.out.println("x * y = " + multiply(x, y));
+        System.out.println("x / y = " + divide(x, y));
+    }
+}
